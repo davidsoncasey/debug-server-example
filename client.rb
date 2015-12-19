@@ -14,8 +14,7 @@ class APIClient
   def test_header_in_request
     uri = "/view-headers"
     auth_header = build_header
-    headers = { "Authorization Header Name" => auth_header }
+    headers = { "Test-Header-Name" => auth_header }
     self.class.get(uri, headers: headers)
   end
-
 end
